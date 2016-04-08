@@ -4,7 +4,7 @@
   "description": "Side effect middleware for Redux.",
   "main": "lib/index.js",
   "scripts": {
-    "postinstall": "rimraf lib && babel src --out-dir lib",
+    "postinstall": "./node_modules/rimraf/bin.js lib && ./node_modules/babel/bin/babel.js src --out-dir lib",
     "test": "mocha --compilers js:babel/register --reporter spec test/*.js"
   },
   "repository": {
